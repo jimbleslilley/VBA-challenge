@@ -13,6 +13,7 @@ Sub stockmarkethomework()
         p = 1
         stockOpen = ws.Cells(2, 3)
         lastRow = ws.Cells(Rows.Count, 1).End(xlUp).Row
+        ws.Cells(h, 12).Value = 0
         
             For i = 2 To lastRow
                 
@@ -62,6 +63,8 @@ Sub stockmarkethomework()
                     ws.Cells(h, 12).BorderAround ColorIndex:=1
                     
                     h = h + 1
+                    ws.Cells(h, 12).Value = 0
+
                     If ws.Cells(i + 1, 3) <> 0 Then
                         stockOpen = ws.Cells(i + 1, 3)
                     Else
@@ -71,6 +74,8 @@ Sub stockmarkethomework()
                         Loop
                     End If
                     
+
+
                 End If
                 
             Next i
@@ -104,4 +109,3 @@ Sub stockmarkethomework()
     
     Application.ScreenUpdating = True
     End Sub
-    
