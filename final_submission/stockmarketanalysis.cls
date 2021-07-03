@@ -74,8 +74,6 @@ Sub stockmarkethomework()
                         Loop
                     End If
                     
-
-
                 End If
                 
             Next i
