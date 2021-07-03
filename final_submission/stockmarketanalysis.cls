@@ -103,7 +103,6 @@ Sub stockmarkethomework()
         ws.Columns("N:P").AutoFit
 
         Next ws
-        
-    
+       
     Application.ScreenUpdating = True
     End Sub
